@@ -46,21 +46,20 @@ int main() {
     //       Note: new may not allocate sequentially; malloc with larger sizes
     //       is more reliable for demonstrating heap growth direction
 
+    
+    cout << "=== MEMORY SEGMENT BOUNDARIES ===" << endl;
+    cout << endl;
+    
     void* heap1 = malloc(1024);
     void* heap2 = malloc(1024);
 
-    cout << "=== MEMORY SEGMENT BOUNDARIES ===" << endl;
-    cout << endl;
-
     // TODO: Print TEXT segment - 2 function addresses
     //       e.g., (void*)&main and (void*)&checkStack
-
-    cout << "Address of main: " << (void*)&main << endl;
-    cout << "Address of checkStack: " << (void*)&checkStack << endl;
-
     cout << "--- TEXT SEGMENT (Code) ---" << endl;
-    // ...
+    cout << "Address of main: " << (void*)&main << endl;
+    cout << "Address of check fn: " << (void*)&checkStack << endl;
     cout << endl;
+    // ...
 
     // TODO: Print DATA segment - 2 initialized global addresses + values
     cout << "--- DATA SEGMENT (Initialized Globals) ---" << endl;
@@ -111,8 +110,8 @@ int main() {
     cout << "Address of main: " << (void*)&main << endl;
     cout << "Address of global1: " << &global1 << endl;
     cout << "Address of global3: " << &global3 << endl;
-    cout << "Heap1: " << heap1 << endl;
-    cout << "Address of checkStack: " << (void*)&checkStack << endl;
+    cout << "Dyn alloc 1: " << heap1 << endl;
+    cout << "Address of check fn: " << (void*)&checkStack << endl;
     
 
     // ...
