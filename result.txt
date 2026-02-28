@@ -1,35 +1,35 @@
 === MEMORY SEGMENT BOUNDARIES ===
 
-Address of main: 0x5575a06a2386
-Address of checkStack: 0x5575a06a21e9
 --- TEXT SEGMENT (Code) ---
+Address of main: 0x563e5962d386
+Address of check fn: 0x563e5962d1e9
 
 --- DATA SEGMENT (Initialized Globals) ---
-Address of global1: 0x5575a06a5010
+Address of global1: 0x563e59630010
 Value of global1: 10
-Address of global2: 0x5575a06a5014
+Address of global2: 0x563e59630014
 Value of global2: 20
 
 --- BSS SEGMENT (Uninitialized Globals) ---
-Address of global3: 0x5575a06a5154
+Address of global3: 0x563e59630154
 Value of global3: 0
-Address of global4: 0x5575a06a5158
+Address of global4: 0x563e59630158
 Value of global4: 0
 
 --- STACK SEGMENT (Cross-function comparison) ---
-Value of parentAddr: 0x7ffe5ddc19c4
-Address of parentAddr: 0x7ffe5ddc1998
-Address of childVar: 0x7ffe5ddc19a4
+Value of parentAddr: 0x7ffd578a4cf4
+Address of parentAddr: 0x7ffd578a4cc8
+Address of childVar: 0x7ffd578a4cd4
 DOWN
 
 --- HEAP SEGMENT (Dynamic Allocation) ---
-Heap1: 0x5575d94c42b0
-Heap2: 0x5575d94c46c0
+Heap1: 0x563e8bd5d2c0
+Heap2: 0x563e8bd5d6d0
 Heap: grows up
 
 === RELATIVE POSITION SUMMARY ===
-Address of main: 0x5575a06a2386
-Address of global1: 0x5575a06a5010
-Address of global3: 0x5575a06a5154
-Heap1: 0x5575d94c42b0
-Address of checkStack: 0x5575a06a21e9
+Address of main: 0x563e5962d386
+Address of global1: 0x563e59630010
+Address of global3: 0x563e59630154
+Dyn alloc 1: 0x563e8bd5d2c0
+Address of check fn: 0x563e5962d1e9
